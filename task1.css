@@ -1,0 +1,47 @@
+/* added custom css to make a professional looking site */
+body  {
+    background-image: radial-gradient(#800080, #FF0000);
+    color: aliceblue;
+}
+
+.headerDiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: #ffdb58;
+    padding: 20px 0px 20px 0px;
+}
+
+.addSong {
+    background-color: #800080;
+    color: white;
+    margin: 10% 30%;
+}
+
+.clearButton {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 120px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: white;
+    padding: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: white;
+    margin: 0 50%;
+}
+

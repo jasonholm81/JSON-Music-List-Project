@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Music Catalogue</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="task1.css">
+</head>
+
+<!-- added onLoad function -->
+<body id="body" onload="onLoad()">
+  <div class="headerDiv">
+  <h1>🎶 Your Awesome Music Catalogue 🎶</h1>
+  </div>
+  <div class="form">
+    <!-- form to input song info -->
+  <form>
+    <label>Enter song name:</label>
+    <input type="text" name="song" id="song" required>
+    <label>Enter artist's name:</label>
+    <input type="text" name="artist" id="artist" required>
+    <label>Enter album's name:</label>
+    <input type="text" name="album" id="album" required>
+    <label>Release date:</label>
+    <input type="text" name="year" id="year" required>
+    <label>Please choose a genre:</label>
+      <select id="genre">
+        <option value="">--Please choose an option--</option>
+        <option value="Pop">Pop</option>
+        <option value="Rock">Rock</option>
+        <option value="Hip/Hop">Hip/Hop</option>
+        <option value="Metal">Metal</option>
+        <option value="Blues">Blues</option>
+        <option value="Alt">Alt</option>
+      </select>
+      <button class="addSong" onclick="addArtist()">Add Song</button>
+    </form>
+    </div>
+    
+    <div class="info">
+      <p>The songs listed here are editable and will be saved upon change.</p>
+      <!-- delete song info -->
+      <p>To remove a song from the list, please click on the corresponding Delete button. The song will be removed upon refresh.</p>
+      <!-- info to scroll down to see list if off of page -->
+      <p>Scroll down to see list</p>
+      <!-- add an id to the <h5> to position the clear all button -->
+      <h5 class="clearButton" id="clear"></h5>
+      <p>❗️Click clear all button to delete all songs❗️</p>
+    </div>
+      
+
+    <script src="task1.js"></script>
+</body>
